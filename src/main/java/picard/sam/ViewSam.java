@@ -43,7 +43,7 @@ import org.broadinstitute.barclay.help.DocumentedFeature;
 import picard.PicardException;
 import picard.cmdline.CommandLineProgram;
 import picard.cmdline.StandardOptionDefinitions;
-import picard.cmdline.programgroups.SamOrBam;
+import picard.cmdline.programgroups.DiagnosticsAndQCProgramGroup;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,7 +60,7 @@ import java.util.List;
 @CommandLineProgramProperties(
         summary = "Prints a SAM or BAM file to the screen.",
         oneLineSummary = "Prints a SAM or BAM file to the screen",
-        programGroup = SamOrBam.class)
+        programGroup = DiagnosticsAndQCProgramGroup.class)
 @DocumentedFeature
 public class ViewSam extends CommandLineProgram {
     public static enum AlignmentStatus {Aligned, Unaligned, All}

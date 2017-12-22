@@ -20,7 +20,8 @@ import picard.PicardException;
 import picard.cmdline.CommandLineProgram;
 import org.broadinstitute.barclay.argparser.CommandLineProgramProperties;
 import picard.cmdline.StandardOptionDefinitions;
-import picard.cmdline.programgroups.VcfOrBcf;
+import picard.cmdline.programgroups.VariantEvaluationProgramGroup;
+import picard.cmdline.programgroups.VariantManipulationProgramGroup;
 
 import java.io.File;
 import java.util.Set;
@@ -36,7 +37,7 @@ import java.util.TreeSet;
                 "all site level information, including annotations based on genotypes (e.g. AN, AF). Output an be " +
                 "any support variant format including .vcf, .vcf.gz or .bcf.",
         oneLineSummary = "Creates a VCF bereft of genotype information from an input VCF or BCF",
-        programGroup = VcfOrBcf.class)
+        programGroup = VariantEvaluationProgramGroup.class)
 @DocumentedFeature
 public class MakeSitesOnlyVcf extends CommandLineProgram {
 

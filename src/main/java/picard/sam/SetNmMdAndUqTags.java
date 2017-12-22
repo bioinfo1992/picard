@@ -34,7 +34,7 @@ import org.broadinstitute.barclay.help.DocumentedFeature;
 import picard.cmdline.CommandLineProgram;
 import org.broadinstitute.barclay.argparser.CommandLineProgramProperties;
 import picard.cmdline.StandardOptionDefinitions;
-import picard.cmdline.programgroups.SamOrBam;
+import picard.cmdline.programgroups.ReadDataManipulationProgramGroup;
 
 import java.io.File;
 import java.util.stream.StreamSupport;
@@ -45,7 +45,7 @@ import java.util.stream.StreamSupport;
 @CommandLineProgramProperties(
         summary = SetNmMdAndUqTags.USAGE_SUMMARY + SetNmMdAndUqTags.USAGE_DETAILS,
         oneLineSummary = SetNmMdAndUqTags.USAGE_SUMMARY,
-        programGroup = SamOrBam.class)
+        programGroup = ReadDataManipulationProgramGroup.class)
 @DocumentedFeature
 public class SetNmMdAndUqTags extends CommandLineProgram {
     static final String USAGE_SUMMARY = "Fixes the NM, MD, and UQ tags in a SAM file.  ";

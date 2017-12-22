@@ -38,7 +38,7 @@ import org.broadinstitute.barclay.help.DocumentedFeature;
 import picard.cmdline.CommandLineProgram;
 import org.broadinstitute.barclay.argparser.CommandLineProgramProperties;
 import picard.cmdline.StandardOptionDefinitions;
-import picard.cmdline.programgroups.SamOrBam;
+import picard.cmdline.programgroups.ReadDataManipulationProgramGroup;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -60,7 +60,7 @@ import java.util.Map;
                 "are written to a file called 'unknown.'  The format (SAM or BAM) of the  " +
                 "output files matches that of the input file.  ",
         oneLineSummary = "Splits a SAM or BAM file into individual files by library",
-        programGroup = SamOrBam.class)
+        programGroup = ReadDataManipulationProgramGroup.class)
 @DocumentedFeature
 public class SplitSamByLibrary extends CommandLineProgram {
 

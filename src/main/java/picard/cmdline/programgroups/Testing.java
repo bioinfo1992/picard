@@ -4,6 +4,8 @@ import org.broadinstitute.barclay.argparser.CommandLineProgramGroup;
 import picard.util.help.HelpConstants;
 
 /**
+ * For internal test purposes only.
+ *
  * @author nhomer
  */
 public class Testing implements CommandLineProgramGroup {

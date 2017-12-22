@@ -9,7 +9,7 @@ import org.broadinstitute.barclay.argparser.CommandLineProgramProperties;
 import org.broadinstitute.barclay.help.DocumentedFeature;
 import picard.cmdline.CommandLineProgram;
 import picard.cmdline.StandardOptionDefinitions;
-import picard.cmdline.programgroups.VcfOrBcf;
+import picard.cmdline.programgroups.VariantManipulationProgramGroup;
 
 import java.io.File;
 
@@ -22,7 +22,7 @@ import java.io.File;
 @CommandLineProgramProperties(
         summary = "Converts a VCF or BCF file to a Picard Interval List.",
         oneLineSummary = "Converts a VCF or BCF file to a Picard Interval List.",
-        programGroup = VcfOrBcf.class)
+        programGroup = VariantManipulationProgramGroup.class)
 @DocumentedFeature
 public class VcfToIntervalList extends CommandLineProgram {
     public static final String INCLUDE_FILTERED_SHORT_NAME = "IF";
